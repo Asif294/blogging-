@@ -6,5 +6,7 @@ class student (models.Model):
     address=models.TextField()
     father_name =models.TextField()
 
+
+
     def __str__(self):
         return f"Roll : {self.roll} - {self.name}"

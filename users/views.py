@@ -9,7 +9,7 @@ def delete_student(request,roll):
     return redirect("homepage")
 
 def edit_student(request, roll):
-    stu = get_object_or_404(models.student, pk=roll)
+    stu=models.student.objects.get(pk=roll)
     if request.method == "POST":
         stu.name = request.POST.get("name")
         stu.father_name = request.POST.get("father_name")

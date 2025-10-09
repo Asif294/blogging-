@@ -33,7 +33,8 @@
       <td>{{st.name}}</td>
       <td>{{st.father_name}}</td>
       <td>{{st.address}}</td> 
-      <td><a class="btn btn-danger text-white" href="{% url 'delect_student' st.roll %}">Delete</a></td> 
+      <td><a class="btn btn-primary text-white" href="{% url 'edit_student' st.roll %}">Edit</a></td> 
+      <td><a class="btn btn-danger text-white" href="{% url 'delete_student' st.roll %}">Delete</a></td>
       </tr>
       {% endfor %}
     

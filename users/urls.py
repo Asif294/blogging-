@@ -3,6 +3,7 @@ from .import views
 urlpatterns = [
     path('',views.home,name="homepage"),
     
-    path('delete/<int:roll>',views.delete_student,name="delect_student")
+    path('edit/<int:roll>/', views.edit_student, name='edit_student'),
+    path('delete/<int:roll>/', views.delete_student, name='delete_student'),
     
 ]
